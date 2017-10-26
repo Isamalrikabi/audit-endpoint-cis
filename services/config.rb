@@ -17,6 +17,6 @@ end
 
 coreo_agent_rule_runner 'cis-endpoints-agent-rules' do
     action :run
-    profiles ${AUDIT_AGENT_PROFILES_ALERT_LIST}
+    profiles ${AUDIT_AGENT_ENDPOINTS_PROFILES_ALERT_LIST}
     filter(${FILTERED_OBJECTS}) if ${FILTERED_OBJECTS}
 end
