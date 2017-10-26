@@ -19,12 +19,15 @@
 
 ## Optional variables with default
 
-**None**
+### `AUDIT_AGENT_PROFILES_ALERT_LIST`:
+  * description: 
+  * default: cis-dil-benchmark
 
 
 ## Optional variables with no default
 
-**None**
+### `FILTERED_OBJECTS`:
+  * description: JSON object of string or regex of aws objects to include or exclude and tag in audit
 
 ## Tags
 
