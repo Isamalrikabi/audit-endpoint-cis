@@ -6,14 +6,14 @@ coreo_agent_selector_rule 'check-linux' do
             it { should eq true }
         end
     end
-  end
+end
 
 coreo_agent_audit_profile 'cis-dil-benchmark' do
     action :define
     selectors ['check-linux']
     profile 'https://github.com/dev-sec/cis-dil-benchmark/archive/master.zip'
     timeout 120
-  end
+end
 
 coreo_agent_rule_runner 'agent-rules' do
     action :run
